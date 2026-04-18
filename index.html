@@ -1184,14 +1184,14 @@ footer.endnote::before {
 
  <section class="appx" id="a4">
  <div class="kicker"><span class="sec-num">A4</span>Cohort economics by tier</div>
- <h3>Per-customer LTV ranks annual &gt; std monthly &gt; $1 &gt; mid-discount. $1 is a leaky, accidental trial &mdash; not a worthless acquisition.</h3>
+ <h3>The data shows per-customer lifetime revenue varies materially by the tier a customer first subscribed through.</h3>
  <table>
- <thead><tr><th>Entry tier</th><th class="num">Customers</th><th class="num">Took another paid sub</th><th class="num">Became $300+ LTV</th><th class="num">Avg LTV / customer</th><th>Read</th></tr></thead>
+ <thead><tr><th>Entry tier</th><th class="num">Customers</th><th class="num">Took another paid sub</th><th class="num">Reached $300+ LTV</th><th class="num">Avg LTV / customer</th><th>Detail</th></tr></thead>
  <tbody>
- <tr><td>$1 monthly</td><td class="num">1,735</td><td class="num">22%</td><td class="num">8% (137 cust)</td><td class="num neg">$60</td><td>78% abandon within days. Small tail of real converts: 42 &rarr; annual at ~90 days.</td></tr>
- <tr><td>Mid-discount ($5/$10 mo)</td><td class="num">1,485</td><td class="num">5%</td><td class="num">~2%</td><td class="num neg">$54</td><td>Structural dud. No meaningful conversion.</td></tr>
- <tr><td>Standard monthly</td><td class="num">18,688</td><td class="num">3%</td><td class="num">&mdash;</td><td class="num">$175</td><td>Workhorse.</td></tr>
- <tr class="emph"><td>Annual</td><td class="num">28,020</td><td class="num">1%</td><td class="num">&mdash;</td><td class="num pos">$337</td><td>Gold standard. M12 retention ~70%.</td></tr>
+ <tr><td>$1 monthly</td><td class="num">1,735</td><td class="num">22%</td><td class="num">8% (137 cust)</td><td class="num">$60</td><td>Of the 22% who took another paid sub, 42 converted to annual (~90 days after entry) and 40 to standard monthly.</td></tr>
+ <tr><td>Mid-discount ($5/$10 mo)</td><td class="num">1,485</td><td class="num">5%</td><td class="num">~2%</td><td class="num">$54</td><td>77 customers took a later non-mid-discount paid sub.</td></tr>
+ <tr><td>Standard monthly</td><td class="num">18,688</td><td class="num">3%</td><td class="num">&mdash;</td><td class="num">$175</td><td>554 customers took a later paid sub at a higher tier.</td></tr>
+ <tr><td>Annual</td><td class="num">28,020</td><td class="num">1%</td><td class="num">&mdash;</td><td class="num">$337</td><td>M12 retention ~70%.</td></tr>
  </tbody>
  </table>
  <table>
@@ -1199,11 +1199,11 @@ footer.endnote::before {
  <tbody>
  <tr><td>Pre-tactics</td><td>2024-04 &rarr; 2025-03</td><td class="num">2,452</td><td class="num">$104</td><td class="num">$255K</td></tr>
  <tr><td>Discount ramp</td><td>2025-04 &rarr; 2025-07</td><td class="num">2,786</td><td class="num">$88</td><td class="num">$245K</td></tr>
- <tr><td>Heavy peak</td><td>2025-08 &rarr; 2025-12</td><td class="num">2,730</td><td class="num neg">$73</td><td class="num neg">$200K</td></tr>
+ <tr><td>Heavy peak</td><td>2025-08 &rarr; 2025-12</td><td class="num">2,730</td><td class="num">$73</td><td class="num">$200K</td></tr>
  <tr><td>Post-shutoff</td><td>2026-01 &rarr; 2026-04</td><td class="num">1,731</td><td class="num">$105</td><td class="num">$182K</td></tr>
  </tbody>
  </table>
- <p style="max-width:46rem;">Per-customer LTV still ranks annual &gt; std monthly &gt; $1 &gt; mid-discount. The pullback from heavy discounts was defensible: mid-discount is a structural dud, and $1 is a leaky trial flow where 78% abandon. But $1 recruited ~137 genuine high-LTV customers who would be lost without a replacement &mdash; which argues for a proper credit-card-required trial, not resurrecting $1. The era-level volume collapse is also real. Both read true.</p>
+ <p style="max-width:46rem;">Per-customer LTV ranks annual ($337), standard monthly ($175), $1 monthly ($60), mid-discount ($54). Of 1,735 customers whose first paid entry was a $1 sub, 22% later took another paid sub and 8% reached $300+ in lifetime revenue. At the era level, revenue per acquired sub fell from $104 in the pre-tactics window to $73 during the heavy-discount peak, then returned to $105 post-shutoff at a lower monthly volume (1,731/mo vs. 2,730/mo).</p>
  <div class="callout-muted">
  <p style="margin:0 0 0.5rem 0;"><b>Data &amp; methodology</b></p>
  <ul style="margin:0; padding-left:1.15rem;">
@@ -1213,8 +1213,8 @@ footer.endnote::before {
  <li><b>Tier classification:</b> $1 monthly = plan &le; $1.50/mo. Mid-discount = $5 or $10/mo (CCL $10/mo reclassified as standard &mdash; it is CCL's primary plan). Standard monthly = $9.50&ndash;$50/mo. Annual = $30&ndash;$600/yr.</li>
  <li><b>Customer-LTV (table 1):</b> each customer attributed to their FIRST paid-tier entry in the window. LTV = <code>&Sigma;(amount &minus; amount_refunded)</code> for <code>paid=TRUE</code> payments across ALL of that customer's subscriptions, any brand, any tier. "Took another paid sub" counts any later non-<code>is_comp</code> individual sub at a different price or interval. "$300+ LTV" is a rough "real subscriber" threshold.</li>
  <li><b>Era economics (table 2):</b> M6-observable gross payments per acquired sub, aggregated to era totals (Phase-9 methodology, unchanged). M6 is the latest horizon fully observable for the heavy-discount cohorts.</li>
- <li><b>Prior framing correction:</b> earlier version of this slide reported "$0.50 M12 rev / sub, $1,396 program lifetime revenue" for the $1 tier. That is accurate at the <em>subscription</em> level but understates customer-level impact because it ignored downstream conversion (22% of $1 customers took another paid sub; 8% became $300+ LTV). Current table reports customer-entry LTV to avoid that distortion.</li>
- <li><b>Data drift vs. Phase 9 (2026-04-16):</b> $1 cohort now 2,841 subs / $1,402 sub-level rev (Phase 9: 2,816 / $1,396). Era totals match within 1%. No material change to conclusions.</li>
+ <li><b>Sub-level vs. customer-level:</b> an earlier version of this slide reported "$0.50 M12 rev / sub, $1,396 program lifetime revenue" for the $1 tier. That figure counts only revenue from the $1 subscription records themselves. The current table reports lifetime revenue per customer across all of their subscriptions, so downstream conversion (22% of $1 customers took another paid sub; 8% reached $300+ LTV) is included. Both views are reported for transparency.</li>
+ <li><b>Data drift vs. Phase 9 (2026-04-16):</b> $1 cohort now 2,841 subs / $1,402 sub-level revenue (Phase 9: 2,816 / $1,396). Era totals match within 1%.</li>
  <li><b>Cites:</b> <code>.pm/chicago-orders-investigation/phase-9-cohort-quality-vs-quantity-2026-04-16.md</code> &sect;&sect; 1, 2.2&ndash;2.5; Redshift validation run 2026-04-18.</li>
  </ul>
  </div>
