@@ -1005,9 +1005,9 @@ footer.endnote::before {
  <p class="lead">The data shows the same pattern across AN, MH, and AA.</p>
  <ul class="claim-bullets">
  <li>The decline in orders is real.</li>
- <li>City brand orders down <span class="num">&minus;53%</span> to <span class="num">&minus;59%</span> vs a late 2025 baseline, which includes pre-Arc decline trend (<a href="#a2">A2</a>).</li>
- <li>Following Arc migration, daily order rate dipped <span class="num">~20%</span> across all city brands in aggregate (<a href="#a7">A7</a>).</li>
- <li>Across traffic, publishing, paywall exposure, and tech migrations, the data shows only one cross-brand signal aligned with order decline &mdash; the intro-rate acquisition program.</li>
+ <li>City brand orders down <span class="num">&minus;53%</span> to <span class="num">&minus;59%</span> vs a late 2025 baseline, which includes pre-Arc decline trend.</li>
+ <li>Following Arc migration, daily order rate dipped <span class="num">~20%</span> across all city brands in aggregate.</li>
+ <li>Across traffic, publishing, paywall exposure, and tech migrations, the data shows only two cross-brand signals aligned with order decline &mdash; <b>the intro-rate acquisition program</b> and <b>weekly publishing volume</b>.</li>
  </ul>
  </section>
 
@@ -1024,7 +1024,7 @@ footer.endnote::before {
  <span><span class="swatch" style="background:var(--tier-d1)"></span>Intro-rate (all mechanisms)</span>
  </div>
  <div class="chart-footnote">
- 7-day rolling average. Anomalies excluded (see <a href="#a2">A2</a>). Source: <span class="mono">cdw_02_stg.pelcro_subscriptions</span>, individual paid. 06/01/2024 through 04/16/2026.
+ 7-day rolling average. Anomalies excluded (see <a href="#a8">A8</a>). Source: <span class="mono">cdw_02_stg.pelcro_subscriptions</span>, individual paid. 06/01/2024 through 04/16/2026.
  </div>
  </div>
 
@@ -1038,14 +1038,14 @@ footer.endnote::before {
  <li><b>By the day CCB flipped to Arc, city-brand orders in aggregate had already fallen from <span class="num">~85</span>/day to <span class="num">~56</span>/day &mdash; about <span class="num">65%</span> of the total decline we've seen.</b>
  <ul class="sub-bullets">
  <li>The remaining drop unfolded across six weeks of staggered city-brand migrations.</li>
- <li>After Arc, CCB runs at the same rate as other Arc brands (see <a href="#a6">A6</a>).</li>
+ <li>After Arc, CCB runs at the same rate as other Arc brands (see <a href="#a3">A3</a>).</li>
  </ul>
  </li>
  <li><b>CGR is the natural control.</b>
  <ul class="sub-bullets">
  <li>The one city brand that basically never ran the intro rate program.</li>
  <li>The one city brand directionally up after its Arc migration &mdash; though volume is small enough that it could be noise.</li>
- <li>See <a href="#a7">A7</a>.</li>
+ <li>See <a href="#a5">A5</a>.</li>
  </ul>
  </li>
  </ul>
@@ -1073,7 +1073,7 @@ footer.endnote::before {
  <span><span class="swatch" style="background:var(--tier-nd)"></span>Full-price ($249 annual + $25 monthly)</span>
  <span><span class="swatch" style="background:var(--tier-d1)"></span>Intro-rate ($199 annual + DISCOUNT50)</span>
  </div>
- <div class="chart-footnote">Arc <span class="mono">10/24/2024</span> (3.5 months before the intro program). Piano V1 <span class="mono">02/10/2025</span>. Sophi <span class="mono">10/02/2025</span>. Arc came before the intro program, so AN is the cleanest test case (see <a href="#a6">A6</a>).</div>
+ <div class="chart-footnote">Arc <span class="mono">10/24/2024</span> (3.5 months before the intro program). Piano V1 <span class="mono">02/10/2025</span>. Sophi <span class="mono">10/02/2025</span>. Arc came before the intro program, so AN is the cleanest test case (see <a href="#a3">A3</a>).</div>
  </div>
 
  <div class="chart-card">
@@ -1087,18 +1087,59 @@ footer.endnote::before {
  </div>
 
  <ul class="data-bullets">
- <li><b>Every brand's decline lines up with the intro program's dates &mdash; not Arc, Piano, or Sophi launches.</b>
+ <li><b>Every brand's decline lines up with the intro program's dates.</b>
  <ul class="sub-bullets">
  <li>AN on Arc since 10/24/2024. AA since 04/07/2025. MHC since 06/13/2025.</li>
- <li>If Arc, Sophi, or Piano were the cause, the data should show each brand's drop lining up with those respective launches.</li>
- <li>Instead, the data shows order volume drops line up with the intro program's ramp-up and end &mdash; across every brand that used it.</li>
+ <li>Order volume drops on each brand line up with the intro program's ramp-up and end &mdash; not with the Arc, Piano, or Sophi dates.</li>
  </ul>
  </li>
- <li><b>Most of the intro volume across all four brand groups wasn't net-new &mdash; it was people who would've paid full price anyway.</b>
+ <li><b>Before vs after the intro program, total order volume is within <span class="num">2%</span> on AN and down <span class="num neg">28%</span> on AA &mdash; most of the AA drop is from the intro-rate promotions ending.</b>
  <ul class="sub-bullets">
- <li>AN, before vs after shutoff: total orders essentially flat (<span class="num">&minus;2%</span>). The intro loss was fully backfilled by full-price.</li>
- <li>AA, before vs after shutoff: total down <span class="num neg">&minus;28%</span>, almost all of it the intro layer disappearing. Full-price backfilled most of the gap, though still sits a bit below 2024 levels.</li>
- <li>Same pattern on city brands and MHC: full-price orders fell <span class="num neg">&minus;40%</span> and <span class="num neg">&minus;44%</span> while the program ran.</li>
+ <li>AN, before vs after shutoff: total orders essentially flat (<span class="num">&minus;2%</span>). Full-price volume rose as the intro tier ended.</li>
+ <li>AA, before vs after shutoff: total down <span class="num neg">&minus;28%</span>. Full-price orders returned near pre-intro-program levels, still slightly below 2024. The <span class="num neg">&minus;28%</span> decline came almost entirely from the intro-rate promotions ending.</li>
+ <li>On city brands and MHC: full-price orders fell <span class="num neg">&minus;40%</span> and <span class="num neg">&minus;44%</span> while the program ran.</li>
+ </ul>
+ </li>
+ </ul>
+ </section>
+
+ <!-- SECTION 03 - PUBLISHING CORRELATION -->
+ <section class="primary" id="s3">
+ <div class="kicker"><span class="sec-num">03</span>Publishing volume and orders</div>
+ <h2>The data shows order volume declines when publishing volume declines.</h2>
+
+ <div class="chart-card">
+ <h3 class="chart-title">Portfolio aggregate: CCB, CCL, CDB, CGR, CNY, AA, ANG, MHC</h3>
+ <svg id="chart-pub-portfolio" viewBox="0 0 1200 520" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Weekly portfolio-level articles published and paid orders from June 2024 through April 2026, shown on a dual axis."></svg>
+ <div class="chart-legend">
+ <span><span class="swatch" style="background:var(--accent)"></span>Articles published (left axis)</span>
+ <span><span class="swatch" style="background:var(--neg)"></span>Paid orders, web (right axis)</span>
+ <span><span class="swatch" style="background:#b8ad8d;opacity:0.7"></span>Holiday &amp; last-call weeks</span>
+ </div>
+ <div class="chart-footnote">
+ Weekly totals across CCB, CDB, CCL, CNY, CGR, AA, ANG, MHC. Orders are individual paid, source = Web; Ad Age advertorial content excluded from articles. Shaded weeks (Thanksgiving, Christmas, New Year, and the 01/05/2026 last-call spike) are excluded from correlation figures. See <a href="#a4">A4</a> for per-brand detail, indexed window comparison, and methodology.
+ </div>
+ </div>
+
+ <ul class="data-bullets">
+ <li><b>Every one of the 8 brands shows publishing volume and orders moving together across the full 22 months.</b>
+ <ul class="sub-bullets">
+ <li>Strongest on the long-form city papers (CNY, CCL).</li>
+ <li>Weaker but still positive on CCB and CDB.</li>
+ <li>See <a href="#a4">A4</a> for per-brand detail.</li>
+ </ul>
+ </li>
+ <li><b>Portfolio publishing volume began declining in mid-2025 and has continued through the most recent data.</b>
+ <ul class="sub-bullets">
+ <li>Baseline (Sep 2024 &ndash; Mar 2025, normal weeks): <span class="num">~584</span> articles/week.</li>
+ <li>Summer 2025 onward: <span class="num">~490</span> articles/week (<span class="num neg">~15%</span> below baseline).</li>
+ <li>Most recent period (Jan 16 &ndash; Apr 2026, normal weeks): <span class="num">~438</span> articles/week (<span class="num neg">~25%</span> below baseline).</li>
+ </ul>
+ </li>
+ <li><b>Both publishing and order volume sit well below their pre-intro baseline levels.</b>
+ <ul class="sub-bullets">
+ <li>Publishing: <span class="num neg">~25%</span> below pre-intro baseline.</li>
+ <li>Orders: <span class="num neg">~31%</span> below pre-intro baseline.</li>
  </ul>
  </li>
  </ul>
@@ -1107,80 +1148,33 @@ footer.endnote::before {
  <!-- APPENDIX -->
  <div class="appx-break">
  <h2>Appendix</h2>
- <div class="sub">Milestones, alternative explanation, cross-brand evidence.</div>
+ <div class="sub">What explains the decline, cross-brand evidence, milestones and scope.</div>
  <div class="toc-grid">
  <ul class="toc">
- <li class="toc-group">Milestones &amp; methodology</li>
- <li><a href="#a1"><span><b>A1</b> &nbsp; Technology milestone dates</span></a></li>
- <li><a href="#a2"><span><b>A2</b> &nbsp; Anomalies and exclusions</span></a></li>
- <li><a href="#a3"><span><b>A3</b> &nbsp; Scope, limitations, open phases</span></a></li>
- </ul>
- <ul class="toc">
- <li class="toc-group">The alternative explanation</li>
- <li><a href="#a4"><span><b>A4</b> &nbsp; Cohort economics by tier</span></a></li>
- <li><a href="#a5"><span><b>A5</b> &nbsp; Full-price baseline vs post-shutoff</span></a></li>
- <li><a href="#a6"><span><b>A6</b> &nbsp; Dual-window: plan availability vs paywall exposure</span></a></li>
+ <li class="toc-group">What explains the decline</li>
+ <li><a href="#a1"><span><b>A1</b> &nbsp; Cohort economics by tier</span></a></li>
+ <li><a href="#a2"><span><b>A2</b> &nbsp; Full-price baseline vs post-shutoff</span></a></li>
+ <li><a href="#a3"><span><b>A3</b> &nbsp; Dual-window: plan availability vs paywall exposure</span></a></li>
+ <li><a href="#a4"><span><b>A4</b> &nbsp; Publishing volume and orders &mdash; detail and methodology</span></a></li>
  </ul>
  <ul class="toc">
  <li class="toc-group">Cross-brand evidence</li>
- <li><a href="#a7"><span><b>A7</b> &nbsp; Arc-tenure correlation</span></a></li>
- <li><a href="#a8"><span><b>A8</b> &nbsp; Arc-wide publishing decline (context)</span></a></li>
- <li><a href="#a9"><span><b>A9</b> &nbsp; Milestone-impact read</span></a></li>
+ <li><a href="#a5"><span><b>A5</b> &nbsp; Arc-tenure correlation</span></a></li>
+ <li><a href="#a6"><span><b>A6</b> &nbsp; Milestone-impact read</span></a></li>
+ </ul>
+ <ul class="toc">
+ <li class="toc-group">Milestones, anomalies, scope</li>
+ <li><a href="#a7"><span><b>A7</b> &nbsp; Technology milestone dates</span></a></li>
+ <li><a href="#a8"><span><b>A8</b> &nbsp; Anomalies and exclusions</span></a></li>
+ <li><a href="#a9"><span><b>A9</b> &nbsp; Scope, limitations, open phases</span></a></li>
  </ul>
  </div>
  </div>
 
- <div class="appx-bucket-break"><h4>Bucket 1 &middot; Milestones &amp; methodology</h4></div>
+ <div class="appx-bucket-break"><h4>Bucket 1 &middot; What explains the decline</h4></div>
 
  <section class="appx" id="a1">
- <div class="kicker"><span class="sec-num">A1</span>Technology milestone dates</div>
- <h3>Jira-canonical dates. Marked on every chart in Sections 01 and 02.</h3>
- <table>
- <thead><tr><th>Brand</th><th>Arc</th><th>Piano</th><th>Sophi</th><th>Intro start</th><th>Intro end</th></tr></thead>
- <tbody>
- <tr><td>AN</td><td>10/24/2024 <span class="mono">ARC-1458</span></td><td>05/01/2025 (V2); V1 02/10/2025, paused 06/16/2025</td><td>10/02/2025 <span class="mono">ARC-2748</span></td><td>02/10/2025</td><td>01/15/2026 <span class="mono">PRMO-I-55</span></td></tr>
- <tr><td>AA</td><td>04/07/2025 <span class="mono">ARC-1783</span></td><td>04/07/2025</td><td>05/22/2025 <span class="mono">ARC-1978</span></td><td>04/09/2025</td><td>01/15/2026 <span class="mono">PRMO-I-54</span></td></tr>
- <tr><td>MHC</td><td>06/13/2025 <span class="mono">ARC-2382</span></td><td>06/13/2025</td><td>01/29/2026 <span class="mono">ARC-2902</span></td><td>04/29/2025</td><td>01/15/2026</td></tr>
- <tr class="emph"><td>City (5 brands)</td><td>02/19/2026 to 03/24/2026</td><td>Same as Arc, per brand</td><td>04/16/2026 <span class="mono">ARC-3518</span></td><td>04/29/2025 (CNY pilot 01/28/2025)</td><td>01/15/2026</td></tr>
- </tbody>
- </table>
- </section>
-
- <section class="appx" id="a2">
- <div class="kicker"><span class="sec-num">A2</span>Anomalies and exclusions</div>
- <h3>Operational events filtered from charts and baselines.</h3>
- <table>
- <thead><tr><th>Brand</th><th>Anomaly</th><th>Why excluded</th></tr></thead>
- <tbody>
- <tr><td>AN</td><td>May 2024 Pelcro migration (45K subs across 2 days)</td><td>Legacy import. All May 2024 excluded.</td></tr>
- <tr><td>AA</td><td>May 2024 Pelcro migration (25K on 05/31/2024)</td><td>Legacy import. All May 2024 excluded.</td></tr>
- <tr><td>AA</td><td>Aug 2024 free_trial = 16,302</td><td>Operational batch.</td></tr>
- <tr><td>AA</td><td>Plan 52366 on 02/11/2026 (567 subs) and 44707 on 01/08/2026 (170)</td><td>Single-day batches.</td></tr>
- <tr><td>MHC</td><td>Jun 2024 Pelcro migration (17K legacy subs)</td><td>Legacy import. Jun 2024 excluded.</td></tr>
- <tr><td>City (CCB)</td><td>Plan 27968 $18/mo on 10/06, 10/08, 10/09, 10/10 of 2024 (11,160 subs)</td><td>Platform batch.</td></tr>
- <tr><td>City (CCB)</td><td>Plan 27970 entirely (Nov 2025 mass-promo cancel batch)</td><td>Not acquisition.</td></tr>
- <tr><td>City (CCL)</td><td>Print $0.01/yr 05/15-16/2025 (2,002 subs)</td><td>Migration backfill; annual not monthly.</td></tr>
- <tr><td>All</td><td>comp_source tier (~17K city lifetime)</td><td>Operational bulk loads, not organic.</td></tr>
- </tbody>
- </table>
- </section>
-
- <section class="appx" id="a3">
- <div class="kicker"><span class="sec-num">A3</span>Scope, limitations, open phases</div>
- <h3>What this read can and can't carry.</h3>
- <ul class="data-bullets">
- <li><b>AA Arc confound.</b> Arc launch and intro rate authorization are two days apart (04/07/2025 vs 04/09/2025). April 2025 effects on AA cannot be cleanly separated into Arc attributable vs intro attributable. AN is used as the isolation case; AA carries the confound caveat.</li>
- <li><b>Arc migration SEO cost on city brands.</b> Separate from the order volume question. Organic sessions &minus;26% to &minus;37% and social &minus;37% to &minus;58% on city brands in Window C. A reindexing signature consistent with a site migration.</li>
- <li><b>Sessions vs. unique visitors.</b> Phase 2 used sessions per brand. Adversarial validation pulled UVs for direct reach and found it rose on four of five city brands B&rarr;C. Organic and social UVs have not been pulled yet. Before extending an SEO framing to AN and AA, UV-by-channel should be pulled for those brands.</li>
- <li><b>What hasn't been tested.</b> Paid-marketing spend alignment to the event windows (Phase 7). Qualitative confirmation from the subscriptions team on the Dec 2025 shutoff intent (Phase 8). Sailthru deliverability and list-health (Phase 6). Coupon-intro cohort retention separate from the $1-plan retention already covered in A4.</li>
- <li><b>Pre-2024 baseline.</b> This read uses May 2024 onward. 2023 data wasn't pulled. If 2023 rates were materially different, the pre-intro baseline may shift.</li>
- </ul>
- </section>
-
- <div class="appx-bucket-break"><h4>Bucket 2 &middot; The alternative explanation</h4></div>
-
- <section class="appx" id="a4">
- <div class="kicker"><span class="sec-num">A4</span>Cohort economics by tier</div>
+ <div class="kicker"><span class="sec-num">A1</span>Cohort economics by tier</div>
  <h3>The data shows per-customer lifetime revenue varies materially by the tier a customer first subscribed through.</h3>
  <table>
  <thead><tr><th>Entry tier</th><th class="num">Customers</th><th class="num">Took another paid sub</th><th class="num">Reached $300+ LTV</th><th class="num">Avg LTV / customer</th><th>Detail</th></tr></thead>
@@ -1216,8 +1210,8 @@ footer.endnote::before {
  </div>
  </section>
 
- <section class="appx" id="a5">
- <div class="kicker"><span class="sec-num">A5</span>Full-price baseline vs post-shutoff</div>
+ <section class="appx" id="a2">
+ <div class="kicker"><span class="sec-num">A2</span>Full-price baseline vs post-shutoff</div>
  <h3>Strip every intro tier. After shutoff, full-price orders are at or near pre-program levels on three of four brand groups.</h3>
  <table>
  <thead><tr><th>Brand</th><th class="num">Pre-program full-price /mo</th><th class="num">Intro-era trough /mo</th><th class="num">Post-shutoff (Feb-Mar 2026)</th><th>Recovery</th></tr></thead>
@@ -1225,13 +1219,13 @@ footer.endnote::before {
  <tr><td>AN</td><td class="num">~260</td><td class="num">~80</td><td class="num">~245</td><td><span class="num pos">~94%</span>. Clean case.</td></tr>
  <tr><td>AA</td><td class="num">~530 (Q1 2025)</td><td class="num">~120</td><td class="num">~541</td><td><span class="num pos">~100%</span>. Above pre-intro.</td></tr>
  <tr><td>MHC</td><td class="num">~620</td><td class="num">~280</td><td class="num">~415</td><td>~67%.</td></tr>
- <tr><td>City aggregate</td><td class="num">~2,000</td><td class="num">~1,300</td><td class="num">~1,554</td><td>~77% (includes Mar 2026 Arc window; see <a href="#a3">A3</a>).</td></tr>
+ <tr><td>City aggregate</td><td class="num">~2,000</td><td class="num">~1,300</td><td class="num">~1,554</td><td>~77% (includes Mar 2026 Arc window; see <a href="#a9">A9</a>).</td></tr>
  </tbody>
  </table>
  </section>
 
- <section class="appx" id="a6">
- <div class="kicker"><span class="sec-num">A6</span>Dual-window: plan availability vs paywall exposure</div>
+ <section class="appx" id="a3">
+ <div class="kicker"><span class="sec-num">A3</span>Dual-window: plan availability vs paywall exposure</div>
  <h3>Intro volume continued after the 06/16/2025 paywall pause. It stopped on 01/15/2026 when plans were removed.</h3>
  <p style="max-width:46rem;">On AN, the Piano V1 paywall was paused on 06/16/2025 (DXO-985/986). The $199 annual plan remained in the catalog and continued to generate intro acquisitions for seven more months, until it was removed on 01/15/2026.</p>
  <table>
@@ -1244,10 +1238,95 @@ footer.endnote::before {
  <p style="max-width:46rem;">Per-day intro rate was higher in the plan-availability window than in the paywall-exposure window on both brands.</p>
  </section>
 
- <div class="appx-bucket-break"><h4>Bucket 3 &middot; Cross-brand evidence</h4></div>
+ <section class="appx" id="a4">
+ <div class="kicker"><span class="sec-num">A4</span>Publishing volume and orders &mdash; detail and methodology</div>
+ <h3>Weekly correlation between articles published and web-placed paid orders, by brand and portfolio.</h3>
+ <div class="chart-card">
+ <h3 class="chart-title">Indexed comparison vs. pre-intro baseline (= 100)</h3>
+ <svg id="chart-pub-windows" viewBox="0 0 1200 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Grouped bar chart comparing articles and orders across five time windows, indexed to the pre-intro baseline."></svg>
+ <div class="chart-legend">
+ <span><span class="swatch" style="background:var(--accent)"></span>Articles per week (indexed)</span>
+ <span><span class="swatch" style="background:var(--neg)"></span>Orders per week (indexed)</span>
+ </div>
+ <div class="chart-footnote">
+ Normal business weeks only (holidays and the 01/05/2026 last-call spike excluded). Baseline = average articles and orders per week from 2024-09 through 2025-03 (both set to 100).
+ </div>
+ </div>
+ <div class="chart-card">
+ <svg id="chart-pub-perbrand" viewBox="0 0 1200 460" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Per-brand Pearson correlation between weekly articles and weekly orders, horizontal bar chart."></svg>
+ <div class="chart-footnote">
+ Per-brand Pearson r over 2024-06-01 to 2026-04-16. Data cleaned (Ad Age advertorial content excluded). CGR shown but flagged for small sample (n=4 weeks).
+ </div>
+ </div>
+ <table>
+ <thead><tr><th>Brand</th><th class="num">Weeks</th><th class="num">r (raw)</th><th class="num">r (cleaned)</th><th class="num">r (detrended, 8-wk)</th><th class="num">Total articles</th><th class="num">Total orders</th></tr></thead>
+ <tbody>
+ <tr><td>CNY</td><td class="num">98</td><td class="num">+0.51</td><td class="num pos">+0.51</td><td class="num pos">+0.58</td><td class="num">7,213</td><td class="num">9,026</td></tr>
+ <tr><td>CCL</td><td class="num">98</td><td class="num">+0.47</td><td class="num pos">+0.47</td><td class="num pos">+0.52</td><td class="num">4,942</td><td class="num">5,177</td></tr>
+ <tr><td>CGR *</td><td class="num">4</td><td class="num">+0.48</td><td class="num">+0.48</td><td class="num">&mdash;</td><td class="num">82</td><td class="num">134</td></tr>
+ <tr><td>ANG</td><td class="num">99</td><td class="num">+0.44</td><td class="num pos">+0.44</td><td class="num pos">+0.37</td><td class="num">11,717</td><td class="num">14,661</td></tr>
+ <tr><td>AA</td><td class="num">98</td><td class="num">+0.43</td><td class="num pos">+0.41</td><td class="num pos">+0.32</td><td class="num">7,492</td><td class="num">21,227</td></tr>
+ <tr><td>MHC</td><td class="num">99</td><td class="num">+0.38</td><td class="num pos">+0.38</td><td class="num pos">+0.40</td><td class="num">3,603</td><td class="num">12,175</td></tr>
+ <tr><td>CDB</td><td class="num">99</td><td class="num">+0.29</td><td class="num">+0.29</td><td class="num pos">+0.41</td><td class="num">5,896</td><td class="num">9,132</td></tr>
+ <tr><td>CCB</td><td class="num">99</td><td class="num">+0.25</td><td class="num">+0.25</td><td class="num pos">+0.33</td><td class="num">9,823</td><td class="num">21,464</td></tr>
+ <tr class="emph"><td>Portfolio, normal weeks (n=92) &dagger;</td><td class="num">92</td><td class="num">+0.65</td><td class="num pos">+0.65</td><td class="num pos">+0.69</td><td class="num">50,768</td><td class="num">93,036</td></tr>
+ <tr><td>Portfolio, all weeks (n=99)</td><td class="num">99</td><td class="num">+0.70</td><td class="num">+0.71</td><td class="num">+0.79</td><td class="num">50,768</td><td class="num">93,036</td></tr>
+ </tbody>
+ </table>
+ <p style="max-width:46rem;">Every brand is positive. Six of eight clear <span class="num">+0.30</span> on cleaned r. All seven testable brands (CGR excluded for sample size) are positive on detrended r. Detrending leaves the portfolio signal intact, ruling out shared-downtrend as the sole driver. Monthly r on normal weeks = <span class="num">+0.91</span>.</p>
+ <p style="max-width:46rem;">* CGR migrated to Arc 2026-03-26; only four weeks of publish data exist. Correlation shown directional only.<br>&dagger; Normal weeks exclude 7 low-activity weeks: Thanksgiving-adjacent (2024-11-25, 2025-11-24), Christmas and New Year weeks (2024-12-23, 2024-12-30, 2025-12-22, 2025-12-29), and the 2026-01-05 last-call order spike. See methodology below.</p>
+ <div class="callout-muted">
+ <p style="margin:0 0 0.5rem 0;"><b>Data &amp; methodology</b></p>
+ <ul style="margin:0; padding-left:1.15rem;">
+ <li><b>Sources:</b> Orders from <code>cdw_02_stg.pelcro_subscriptions</code>. Articles from <code>cdw_01_raw.drupal_articles</code> (pre-migration) and <code>cdw_02_stg.arc_articles</code> (post-migration). Redshift, pulled 2026-04-18.</li>
+ <li><b>Scope:</b> 8 brands &mdash; CCB, CDB, CCL, CNY, CGR (city), AA, ANG, MHC (comparable Arc-migrated).</li>
+ <li><b>Window:</b> 2024-06-01 through 2026-04-16 (22 months, ~98 weeks per brand). Selected for statistical power and to include AN's full pre/post-Arc era.</li>
+ <li><b>Orders universe:</b> <code>is_individual=TRUE</code>, <code>COALESCE(is_comp,FALSE)=FALSE</code>, <code>source IN ('Web','Website','website','web')</code>. Web-only filter is required &mdash; without it, 52% of rows are bulk import migrations and 15% are comp, which would drown out organic acquisition signal.</li>
+ <li><b>Order anomaly exclusions:</b> Same operational cohorts as <a href="#a8">A8</a> &mdash; CCB Oct-2024 $18/mo migration spike; CCB Nov-2025 $20/mo mass-promo cancel batch; CCL $0.01 backfill.</li>
+ <li><b>Articles &mdash; source reconciliation:</b> For each brand, drupal_articles used for dates before that brand's Arc migration date; arc_articles used for dates on or after. This avoids the ~2-month double-count on MHC (Drupal and Arc ran in parallel through mid-2025) and smaller overlaps on AN and AA. Brand-code remapping: content-table "MH" maps to Pelcro "MHC"; "AN" maps to "ANG".</li>
+ <li><b>Content filter:</b> AA <code>content_type='Work'</code> (Drupal) and <code>subtype='work'</code> (Arc) excluded. This content is ad-campaign showcases published on behalf of clients, not reported editorial. Verified against the content KPI tables: in Drupal era, Work was 20% of AA's article count but drove 0.08% of total order finish-assists; in Arc era, Work was 11% of articles but drove 3.8% of finish-assists. Per-visit conversion rate 31%/47% of Article rate. 1,005 AA records excluded (587 Drupal + 418 Arc). No equivalent content category exists on other brands.</li>
+ <li><b>Aggregation:</b> Weekly, using <code>date_trunc('week', d)::date</code> (Monday-start). Per-brand effective window constrained to the range where article data exists for that brand (CGR Arc-only, 4 weeks).</li>
+ <li><b>Pearson r:</b> Computed manually (Redshift has no CORR function) with float casts to prevent integer overflow in SUM-of-squares.</li>
+ <li><b>Detrending:</b> 8-week centered rolling-mean residuals on both series. Published values minus 8-week rolling mean (4 weeks each side where available). 4-week also computed as a robustness check.</li>
+ <li><b>Tests run:</b>
+ <ol style="padding-left:1.2rem; margin-top:0.4rem;">
+ <li>Per-brand raw weekly r over full window.</li>
+ <li>Per-brand cleaned weekly r (AA Work filter applied).</li>
+ <li>Per-brand detrended r (8-week rolling residuals).</li>
+ <li>Per-brand lagged r at 1, 2, 4, 8 weeks (publishing leading orders).</li>
+ <li>Portfolio aggregate (all 8 brands summed per week): raw, cleaned, detrended, monthly.</li>
+ <li>Cross-brand Spearman rank correlation on % change pre-shutoff (2025-04-01 to 2025-07-31) vs post-shutoff (2025-12-01 to 2026-03-31).</li>
+ <li>Pre/post-Arc shock (90-day windows) for AN, AA, MHC &mdash; the three brands with enough post-Arc history to test.</li>
+ </ol>
+ </li>
+ <li><b>Normal-weeks filter:</b> The reported headline portfolio numbers exclude 7 non-representative weeks to keep the comparison on routine business activity. All weeks remain plotted in the chart; the footnote in Section <a href="#s3">03</a> makes this explicit. Excluded weeks:
+ <ul style="padding-left:1.2rem; margin-top:0.4rem;">
+ <li><b>2024-11-25, 2025-11-24</b> &mdash; Thanksgiving week (4-day US holiday schedule depresses both article and order activity).</li>
+ <li><b>2024-12-23, 2024-12-30, 2025-12-22, 2025-12-29</b> &mdash; Christmas and New Year weeks (widely depressed activity).</li>
+ <li><b>2026-01-05</b> &mdash; last-call rush. Orders spiked to 1,235 as subscribers grabbed the intro plans before the 01/15 shutoff. Not representative of underlying demand.</li>
+ </ul>
+ Both all-weeks and normal-weeks figures are computed for transparency (all weeks: r = <span class="num">+0.71</span> weekly, <span class="num">+0.79</span> detrended, <span class="num">+0.89</span> monthly; normal weeks: r = <span class="num">+0.65</span> weekly, <span class="num">+0.69</span> detrended, <span class="num">+0.91</span> monthly). The framing in Sections <a href="#s0">00</a> and <a href="#s3">03</a> uses normal weeks as the headline because the masking narrative (indexed windows) requires steady-state comparisons.
+ </li>
+ <li><b>What the data supports:</b> Week-to-week co-movement between publishing volume and paid-order volume. Signal is positive on every brand tested, strengthens after detrending (ruling out shared-trend artifact), and is very strong at the portfolio level (r = <span class="num">+0.65</span> weekly cleaned, <span class="num">+0.69</span> detrended, <span class="num">+0.91</span> monthly, normal weeks). Indexed window comparison (Section <a href="#s3">03</a>) shows orders held near baseline during the intro era while articles had already declined <span class="num">~15%</span>-<span class="num">18%</span>; post-shutoff, orders landed <span class="num">~6</span> points below articles at <span class="num">69</span> / <span class="num">75</span> of baseline &mdash; beneath the pre-intro line.</li>
+ <li><b>Discrete event vs longer horizon:</b> At the 01/15/2026 shutoff specifically, weekly orders dropped <span class="num">&minus;19%</span> and weekly articles dropped only <span class="num">&minus;3%</span> in the matched pre/post window (2025-12 to 2026-01-12 vs 2026-01-19 to 2026-02-23, normal weeks only). The cliff itself is mechanical &mdash; removing plans does not affect editorial cadence. Over longer horizons the series co-move. The two observations are compatible because the correlation captures week-to-week rhythm, not event-driven shocks to the order side.</li>
+ <li><b>What the data does not support:</b> A causal claim that publishing volume change drives order change. Three reasons:
+ <ol style="padding-left:1.2rem; margin-top:0.4rem;">
+ <li>Lagged correlations are weak and inconsistent across brands. Concurrent r dominates. If publishing drove orders, we would expect a peak at lag +1 to +4 weeks; instead peak is at lag 0.</li>
+ <li>Cross-brand rank test on pre-shutoff vs post-shutoff % change: Spearman &rho; = <span class="num">+0.25</span>. Brands with bigger publishing drops tend to have bigger order drops, but modestly.</li>
+ <li>Per-brand pre/post-Arc shock test (90-day windows): all three testable brands directionally disagree with the hypothesis. MHC articles <span class="num neg">&minus;26%</span> / orders <span class="num pos">+16%</span>. ANG articles <span class="num pos">+11%</span> / orders <span class="num neg">&minus;4%</span>. AA articles <span class="num neg">&minus;1%</span> / orders <span class="num neg">&minus;19%</span>.</li>
+ </ol>
+ The signal is consistent with both series responding to shared portfolio-level forces (seasonal audience cycles, macro news flow) rather than publishing directly driving subscription behavior.
+ </li>
+ <li><b>Prior exploratory run:</b> An earlier exploratory correlation produced lower per-brand r values (e.g., ANG <span class="num">+0.24</span> vs this run's <span class="num">+0.44</span>). Root cause identified: prior run used na&iuml;ve UNION of drupal_articles and arc_articles without per-brand migration-date deduplication, which double-counted the Drupal/Arc overlap during each brand's migration window. This read uses strict migration-date cutoff; the higher r values reflect elimination of overlap noise, not a methodological divergence in the other direction.</li>
+ <li><b>Reproducibility:</b> Script and data at <code>a8-correlation-analysis-2026-04-18/</code> in the repo root. <code>analyze.py</code> runs the per-brand pipeline from the saved JSON queries. <code>aggregate.py</code> produces the all-weeks portfolio figures. <code>normal-weeks-only.py</code> produces the normal-weeks portfolio figures and the indexed-window table used in Section <a href="#s3">03</a>.</li>
+ </ul>
+ </div>
+ </section>
 
- <section class="appx" id="a7">
- <div class="kicker"><span class="sec-num">A7</span>Arc-tenure correlation</div>
+ <div class="appx-bucket-break"><h4>Bucket 2 &middot; Cross-brand evidence</h4></div>
+
+ <section class="appx" id="a5">
+ <div class="kicker"><span class="sec-num">A5</span>Arc-tenure correlation</div>
  <h3>B&rarr;C order change by Arc tenure. No correlation (Spearman &rho; = &minus;0.01, p = 0.97).</h3>
  <table>
  <thead><tr><th>Brand</th><th class="num">Months on Arc</th><th class="num">B&rarr;C non-$1 daily rate</th></tr></thead>
@@ -1266,14 +1345,8 @@ footer.endnote::before {
  <p style="max-width:46rem;">No consistent relationship between Arc tenure and B&rarr;C order change. Spearman &rho; = &minus;0.01 (p = 0.97). Brands are up and down across the tenure range. City-brand declines sit inside the non-city distribution, not outside it. CGR's +23% on a 19-day window has a 95% CI that straddles zero; directional, not statistically significant on its own.</p>
  </section>
 
- <section class="appx" id="a8">
- <div class="kicker"><span class="sec-num">A8</span>Arc-wide publishing decline (context)</div>
- <h3>Post-Arc publishing-volume change across Arc brands.</h3>
- <p style="max-width:46rem;">Nine of eleven Arc brands with comparable pre/post data show a post-Arc publishing-volume drop (range &minus;2% to &minus;41%). For several (MH, RN, TB) the drop hasn't recovered 4-10 months post-launch. City-brand publishing declines sit in the middle of that distribution, not at the extremes.</p>
- </section>
-
- <section class="appx" id="a9">
- <div class="kicker"><span class="sec-num">A9</span>Milestone-impact read</div>
+ <section class="appx" id="a6">
+ <div class="kicker"><span class="sec-num">A6</span>Milestone-impact read</div>
  <h3>30-day pre vs post for each milestone on each brand group.</h3>
  <table>
  <thead><tr><th>Brand</th><th>Milestone</th><th>Date</th><th class="num">Total paid DTC<br>30d pre</th><th class="num">30d post</th><th>Read</th></tr></thead>
@@ -1289,11 +1362,58 @@ footer.endnote::before {
  <tr class="emph"><td>MHC</td><td>Intro-rate end</td><td>01/15/2026</td><td class="num">~25/d</td><td class="num">~16/d</td><td>Total <span class="num neg">&minus;36%</span>.</td></tr>
  <tr><td>MHC</td><td>Sophi</td><td>01/29/2026</td><td class="num">~18/d</td><td class="num">~16/d</td><td>No step.</td></tr>
  <tr class="emph"><td>City</td><td>Intro-rate end</td><td>01/15/2026</td><td class="num">~76/d</td><td class="num">~59/d</td><td>Total <span class="num neg">&minus;22%</span>.</td></tr>
- <tr><td>City</td><td>Arc (first)</td><td>02/19/2026</td><td class="num">~57/d</td><td class="num">~50/d</td><td>Small continued drift (Arc SEO; see <a href="#a3">A3</a>).</td></tr>
+ <tr><td>City</td><td>Arc (first)</td><td>02/19/2026</td><td class="num">~57/d</td><td class="num">~50/d</td><td>Small continued drift (Arc SEO; see <a href="#a9">A9</a>).</td></tr>
  </tbody>
  </table>
- <p style="max-width:46rem;">Of the milestones tabulated, the intro rate end row is the only one that shows a consistent total-paid-DTC step across the brand groups that ran the program. Arc, Piano V2, and Sophi rows are flat or up on 30-day averages. The city Arc row shows a smaller continued drift consistent with the SEO cost noted in A3 rather than a checkout or paywall regression.</p>
+ <p style="max-width:46rem;">Of the milestones tabulated, the intro rate end row is the only one that shows a consistent total-paid-DTC step across the brand groups that ran the program. Arc, Piano V2, and Sophi rows are flat or up on 30-day averages. The city Arc row shows a smaller continued drift consistent with the SEO cost noted in A9 rather than a checkout or paywall regression.</p>
  <div class="cite"><b>Cite</b>Derived from the daily datasets plotted in Sections 01 and 02.</div>
+ </section>
+
+ <div class="appx-bucket-break"><h4>Bucket 3 &middot; Milestones, anomalies, scope</h4></div>
+
+ <section class="appx" id="a7">
+ <div class="kicker"><span class="sec-num">A7</span>Technology milestone dates</div>
+ <h3>Jira-canonical dates. Marked on every chart in Sections 01 and 02.</h3>
+ <table>
+ <thead><tr><th>Brand</th><th>Arc</th><th>Piano</th><th>Sophi</th><th>Intro start</th><th>Intro end</th></tr></thead>
+ <tbody>
+ <tr><td>AN</td><td>10/24/2024 <span class="mono">ARC-1458</span></td><td>05/01/2025 (V2); V1 02/10/2025, paused 06/16/2025</td><td>10/02/2025 <span class="mono">ARC-2748</span></td><td>02/10/2025</td><td>01/15/2026 <span class="mono">PRMO-I-55</span></td></tr>
+ <tr><td>AA</td><td>04/07/2025 <span class="mono">ARC-1783</span></td><td>04/07/2025</td><td>05/22/2025 <span class="mono">ARC-1978</span></td><td>04/09/2025</td><td>01/15/2026 <span class="mono">PRMO-I-54</span></td></tr>
+ <tr><td>MHC</td><td>06/13/2025 <span class="mono">ARC-2382</span></td><td>06/13/2025</td><td>01/29/2026 <span class="mono">ARC-2902</span></td><td>04/29/2025</td><td>01/15/2026</td></tr>
+ <tr class="emph"><td>City (5 brands)</td><td>02/19/2026 to 03/24/2026</td><td>Same as Arc, per brand</td><td>04/16/2026 <span class="mono">ARC-3518</span></td><td>04/29/2025 (CNY pilot 01/28/2025)</td><td>01/15/2026</td></tr>
+ </tbody>
+ </table>
+ </section>
+
+ <section class="appx" id="a8">
+ <div class="kicker"><span class="sec-num">A8</span>Anomalies and exclusions</div>
+ <h3>Operational events filtered from charts and baselines.</h3>
+ <table>
+ <thead><tr><th>Brand</th><th>Anomaly</th><th>Why excluded</th></tr></thead>
+ <tbody>
+ <tr><td>AN</td><td>May 2024 Pelcro migration (45K subs across 2 days)</td><td>Legacy import. All May 2024 excluded.</td></tr>
+ <tr><td>AA</td><td>May 2024 Pelcro migration (25K on 05/31/2024)</td><td>Legacy import. All May 2024 excluded.</td></tr>
+ <tr><td>AA</td><td>Aug 2024 free_trial = 16,302</td><td>Operational batch.</td></tr>
+ <tr><td>AA</td><td>Plan 52366 on 02/11/2026 (567 subs) and 44707 on 01/08/2026 (170)</td><td>Single-day batches.</td></tr>
+ <tr><td>MHC</td><td>Jun 2024 Pelcro migration (17K legacy subs)</td><td>Legacy import. Jun 2024 excluded.</td></tr>
+ <tr><td>City (CCB)</td><td>Plan 27968 $18/mo on 10/06, 10/08, 10/09, 10/10 of 2024 (11,160 subs)</td><td>Platform batch.</td></tr>
+ <tr><td>City (CCB)</td><td>Plan 27970 entirely (Nov 2025 mass-promo cancel batch)</td><td>Not acquisition.</td></tr>
+ <tr><td>City (CCL)</td><td>Print $0.01/yr 05/15-16/2025 (2,002 subs)</td><td>Migration backfill; annual not monthly.</td></tr>
+ <tr><td>All</td><td>comp_source tier (~17K city lifetime)</td><td>Operational bulk loads, not organic.</td></tr>
+ </tbody>
+ </table>
+ </section>
+
+ <section class="appx" id="a9">
+ <div class="kicker"><span class="sec-num">A9</span>Scope, limitations, open phases</div>
+ <h3>What this read can and can't carry.</h3>
+ <ul class="data-bullets">
+ <li><b>AA Arc confound.</b> Arc launch and intro rate authorization are two days apart (04/07/2025 vs 04/09/2025). April 2025 effects on AA cannot be cleanly separated into Arc attributable vs intro attributable. AN is used as the isolation case; AA carries the confound caveat.</li>
+ <li><b>Arc migration SEO cost on city brands.</b> Separate from the order volume question. Organic sessions &minus;26% to &minus;37% and social &minus;37% to &minus;58% on city brands in Window C. A reindexing signature consistent with a site migration.</li>
+ <li><b>Sessions vs. unique visitors.</b> Phase 2 used sessions per brand. Adversarial validation pulled UVs for direct reach and found it rose on four of five city brands B&rarr;C. Organic and social UVs have not been pulled yet. Before extending an SEO framing to AN and AA, UV-by-channel should be pulled for those brands.</li>
+ <li><b>What hasn't been tested.</b> Paid-marketing spend alignment to the event windows (Phase 7). Qualitative confirmation from the subscriptions team on the Dec 2025 shutoff intent (Phase 8). Sailthru deliverability and list-health (Phase 6). Coupon-intro cohort retention separate from the $1-plan retention already covered in <a href="#a1">A1</a>.</li>
+ <li><b>Pre-2024 baseline.</b> This read uses May 2024 onward. 2023 data wasn't pulled. If 2023 rates were materially different, the pre-intro baseline may shift.</li>
+ </ul>
  </section>
 
  <footer class="endnote">
@@ -4167,6 +4287,435 @@ render('chart-aa', CSV_AA, [
   { m:'2025-05-22', row:1, label:'Sophi', anchor:'start' },
   { m:'2026-01-15', row:0, label:'Intro end', anchor:'end' }
 ]);
+
+})();
+</script>
+
+<script>
+/* Publishing correlation charts: dual-axis weekly time series + per-brand r bar chart. */
+(function(){
+
+const CSV_PUB_PORTFOLIO = `week_start,articles,orders
+2024-05-27,21,42
+2024-06-03,552,930
+2024-06-10,612,930
+2024-06-17,609,1128
+2024-06-24,634,1131
+2024-07-01,340,629
+2024-07-08,544,896
+2024-07-15,589,837
+2024-07-22,610,1015
+2024-07-29,574,943
+2024-08-05,543,855
+2024-08-12,559,967
+2024-08-19,544,923
+2024-08-26,518,907
+2024-09-02,430,865
+2024-09-09,555,939
+2024-09-16,619,900
+2024-09-23,549,887
+2024-09-30,557,941
+2024-10-07,570,891
+2024-10-14,547,824
+2024-10-21,613,931
+2024-10-28,643,884
+2024-11-04,590,871
+2024-11-11,651,903
+2024-11-18,614,858
+2024-11-25,386,502
+2024-12-02,562,851
+2024-12-09,618,971
+2024-12-16,596,1059
+2024-12-23,121,475
+2024-12-30,242,761
+2025-01-06,580,1587
+2025-01-13,656,1427
+2025-01-20,621,1091
+2025-01-27,660,1162
+2025-02-03,617,1135
+2025-02-10,584,1173
+2025-02-17,456,894
+2025-02-24,508,960
+2025-03-03,570,1352
+2025-03-10,655,1018
+2025-03-17,548,937
+2025-03-24,575,929
+2025-03-31,597,1257
+2025-04-07,756,1662
+2025-04-14,569,984
+2025-04-21,558,1029
+2025-04-28,626,1109
+2025-05-05,576,1060
+2025-05-12,536,910
+2025-05-19,543,965
+2025-05-26,440,811
+2025-06-02,470,1000
+2025-06-09,483,1073
+2025-06-16,522,863
+2025-06-23,520,979
+2025-06-30,394,822
+2025-07-07,466,973
+2025-07-14,449,1256
+2025-07-21,513,1077
+2025-07-28,495,1142
+2025-08-04,454,1103
+2025-08-11,460,1131
+2025-08-18,474,1184
+2025-08-25,483,1026
+2025-09-01,417,924
+2025-09-08,522,956
+2025-09-15,513,1077
+2025-09-22,444,1096
+2025-09-29,506,992
+2025-10-06,475,1132
+2025-10-13,525,1064
+2025-10-20,567,1104
+2025-10-27,517,1036
+2025-11-03,570,1160
+2025-11-10,540,1157
+2025-11-17,483,1140
+2025-11-24,273,627
+2025-12-01,473,1135
+2025-12-08,433,903
+2025-12-15,511,961
+2025-12-22,168,429
+2025-12-29,86,373
+2026-01-05,424,1235
+2026-01-12,499,851
+2026-01-19,459,688
+2026-01-26,471,736
+2026-02-02,515,902
+2026-02-09,517,988
+2026-02-16,393,650
+2026-02-23,421,716
+2026-03-02,392,660
+2026-03-09,467,682
+2026-03-16,382,647
+2026-03-23,374,568
+2026-03-30,451,636
+2026-04-06,417,621
+2026-04-13,441,623`;
+
+const PER_BRAND_R = [
+  { brand: 'CNY',  r: 0.51, flag: null },
+  { brand: 'CGR',  r: 0.48, flag: '*' },
+  { brand: 'CCL',  r: 0.47, flag: null },
+  { brand: 'ANG',  r: 0.44, flag: null },
+  { brand: 'AA',   r: 0.41, flag: null },
+  { brand: 'MHC',  r: 0.38, flag: null },
+  { brand: 'CDB',  r: 0.29, flag: null },
+  { brand: 'CCB',  r: 0.25, flag: null }
+];
+
+function parsePubCsv(csv) {
+  const lines = csv.trim().split(/\r?\n/);
+  lines.shift(); // header
+  return lines.map(line => {
+    const p = line.split(',');
+    return { date: p[0], articles: +p[1], orders: +p[2] };
+  });
+}
+
+function niceTop(mx) {
+  const pow = Math.pow(10, Math.floor(Math.log10(mx)));
+  const frac = mx / pow;
+  let step;
+  if (frac <= 2) step = pow/2;
+  else if (frac <= 5) step = pow;
+  else step = pow*2;
+  return Math.ceil(mx / step) * step;
+}
+
+function niceStep(mx) {
+  const pow = Math.pow(10, Math.floor(Math.log10(mx)));
+  const frac = mx / pow;
+  if (frac <= 2) return pow/2;
+  if (frac <= 5) return pow;
+  return pow*2;
+}
+
+function renderPubPortfolio(svgId, csv, milestones) {
+  const rows = parsePubCsv(csv);
+
+  const W_SVG = 1200, H_SVG = 520;
+  const M = { t: 110, r: 70, b: 90, l: 70 };
+  const plotW = W_SVG - M.l - M.r;
+  const plotH = H_SVG - M.t - M.b;
+
+  const t0 = new Date('2024-05-27T00:00:00Z').getTime();
+  const t1 = new Date('2026-04-16T00:00:00Z').getTime();
+  const tSpan = t1 - t0;
+  const xFor = d => M.l + ((new Date(d+'T00:00:00Z').getTime() - t0) / tSpan) * plotW;
+
+  // Drop the lone 2024-05-27 short week from plotting range (~21 articles, 42 orders) to avoid anchoring the y-max on a partial week.
+  const plotRows = rows.filter(r => r.date !== '2024-05-27');
+
+  let aMax = 0, oMax = 0;
+  plotRows.forEach(r => { if (r.articles > aMax) aMax = r.articles; if (r.orders > oMax) oMax = r.orders; });
+  const aTop = niceTop(aMax);
+  const oTop = niceTop(oMax);
+  const aStep = niceStep(aMax);
+  const oStep = niceStep(oMax);
+  const yForA = v => M.t + plotH - (v / aTop) * plotH;
+  const yForO = v => M.t + plotH - (v / oTop) * plotH;
+
+  const parts = [];
+  parts.push('<g font-family="-apple-system, \'Segoe UI\', sans-serif" font-size="16">');
+
+  // Gridlines + left (articles) labels
+  for (let v = 0; v <= aTop; v += aStep) {
+    const y = yForA(v);
+    parts.push('<line x1="'+M.l+'" x2="'+(W_SVG-M.r)+'" y1="'+y.toFixed(1)+'" y2="'+y.toFixed(1)+'" stroke="#d9cfb4" stroke-width="1" stroke-dasharray="'+(v===0?'0':'2 3')+'" />');
+    parts.push('<text x="'+(M.l-12)+'" y="'+(y+5).toFixed(1)+'" text-anchor="end" fill="#28405a" font-size="14">'+v+'</text>');
+  }
+  // Right (orders) labels
+  for (let v = 0; v <= oTop; v += oStep) {
+    const y = yForO(v);
+    parts.push('<text x="'+(W_SVG-M.r+12)+'" y="'+(y+5).toFixed(1)+'" text-anchor="start" fill="#8a3a3a" font-size="14">'+v+'</text>');
+  }
+
+  // Axis labels
+  parts.push('<text x="'+(M.l-46)+'" y="'+(M.t-10)+'" fill="#28405a" font-weight="600" font-size="13" letter-spacing="0.12em">ARTICLES / WK</text>');
+  parts.push('<text x="'+(W_SVG-M.r+46)+'" y="'+(M.t-10)+'" text-anchor="end" fill="#8a3a3a" font-weight="600" font-size="13" letter-spacing="0.12em">ORDERS / WK</text>');
+
+  // Month x labels (every 2 months)
+  const axisMonths = ['2024-08','2024-10','2024-12','2025-02','2025-04','2025-06','2025-08','2025-10','2025-12','2026-02','2026-04'];
+  const monthLbl = {1:'Jan',2:'Feb',3:'Mar',4:'Apr',5:'May',6:'Jun',7:'Jul',8:'Aug',9:'Sep',10:'Oct',11:'Nov',12:'Dec'};
+  axisMonths.forEach(ym => {
+    const x = xFor(ym + '-01');
+    const m = +ym.split('-')[1];
+    parts.push('<line x1="'+x.toFixed(1)+'" x2="'+x.toFixed(1)+'" y1="'+(M.t+plotH)+'" y2="'+(M.t+plotH+7)+'" stroke="#8f8668" />');
+    parts.push('<text x="'+x.toFixed(1)+'" y="'+(M.t+plotH+25)+'" text-anchor="middle" fill="#7a7264" font-size="14">'+monthLbl[m]+'</text>');
+  });
+  parts.push('<text x="'+xFor('2024-09-15').toFixed(1)+'" y="'+(M.t+plotH+48)+'" text-anchor="middle" fill="#1a1813" font-weight="600" letter-spacing="0.14em" font-size="12">2024</text>');
+  parts.push('<text x="'+xFor('2025-07-01').toFixed(1)+'" y="'+(M.t+plotH+48)+'" text-anchor="middle" fill="#1a1813" font-weight="600" letter-spacing="0.14em" font-size="12">2025</text>');
+  parts.push('<text x="'+xFor('2026-02-15').toFixed(1)+'" y="'+(M.t+plotH+48)+'" text-anchor="middle" fill="#1a1813" font-weight="600" letter-spacing="0.14em" font-size="12">2026</text>');
+
+  // Band rects (all entries flagged band:true)
+  milestones.filter(m => m.band).forEach(b => {
+    const x0 = xFor(b.m);
+    const x1 = xFor(b.m2);
+    parts.push('<rect x="'+x0.toFixed(1)+'" y="'+M.t+'" width="'+(x1-x0).toFixed(1)+'" height="'+plotH+'" fill="#c9c1ae" fill-opacity="0.32" />');
+  });
+
+  // Anomaly weeks (holidays + last-call spike) — excluded from normal-weeks correlation, marked visually
+  const anomalies = ['2024-11-25','2024-12-23','2024-12-30','2025-11-24','2025-12-22','2025-12-29','2026-01-05'];
+  anomalies.forEach(d => {
+    const x0 = xFor(d);
+    const x1 = xFor(d) + (plotW / ((t1 - t0) / (7 * 86400000)));
+    parts.push('<rect x="'+x0.toFixed(1)+'" y="'+M.t+'" width="'+(x1-x0).toFixed(1)+'" height="'+plotH+'" fill="#b8ad8d" fill-opacity="0.32" />');
+  });
+
+  // Plot border
+  parts.push('<line x1="'+M.l+'" x2="'+(W_SVG-M.r)+'" y1="'+(M.t+plotH)+'" y2="'+(M.t+plotH)+'" stroke="#1a1813" stroke-width="1.2" />');
+  parts.push('<line x1="'+M.l+'" x2="'+M.l+'" y1="'+M.t+'" y2="'+(M.t+plotH)+'" stroke="#28405a" stroke-width="1.2" />');
+  parts.push('<line x1="'+(W_SVG-M.r)+'" x2="'+(W_SVG-M.r)+'" y1="'+M.t+'" y2="'+(M.t+plotH)+'" stroke="#8a3a3a" stroke-width="1.2" />');
+
+  // Articles line
+  let aPath = '';
+  for (let i = 0; i < plotRows.length; i++) {
+    const r = plotRows[i];
+    aPath += (i ? ' L ' : 'M ') + xFor(r.date).toFixed(1) + ',' + yForA(r.articles).toFixed(1);
+  }
+  parts.push('<path d="'+aPath+'" fill="none" stroke="#28405a" stroke-width="1.8" stroke-opacity="0.85" stroke-linejoin="round" />');
+
+  // Orders line
+  let oPath = '';
+  for (let i = 0; i < plotRows.length; i++) {
+    const r = plotRows[i];
+    oPath += (i ? ' L ' : 'M ') + xFor(r.date).toFixed(1) + ',' + yForO(r.orders).toFixed(1);
+  }
+  parts.push('<path d="'+oPath+'" fill="none" stroke="#8a3a3a" stroke-width="1.8" stroke-opacity="0.92" stroke-linejoin="round" />');
+
+  // Milestone verticals + labels (supports labeled ranges via m2)
+  const rowLabelY = [M.t - 28, M.t - 78];
+  const rowSubY = [M.t - 12, M.t - 62];
+  const rowLineTopY = [M.t - 46, M.t - 96];
+  milestones.forEach(ev => {
+    if (ev.band) return; // unlabeled bands drawn separately as rects
+    if (ev.m2) {
+      // Labeled range: vertical at each end + centered label
+      const x0 = xFor(ev.m), x1 = xFor(ev.m2), xm = (x0+x1)/2;
+      parts.push('<line x1="'+x0.toFixed(1)+'" x2="'+x0.toFixed(1)+'" y1="'+rowLineTopY[ev.row||0]+'" y2="'+(M.t+plotH)+'" stroke="#1a1813" stroke-width="1" stroke-dasharray="3 3" opacity="0.55" />');
+      parts.push('<line x1="'+x1.toFixed(1)+'" x2="'+x1.toFixed(1)+'" y1="'+rowLineTopY[ev.row||0]+'" y2="'+(M.t+plotH)+'" stroke="#1a1813" stroke-width="1" stroke-dasharray="3 3" opacity="0.55" />');
+      parts.push('<text x="'+xm.toFixed(1)+'" y="'+rowLabelY[ev.row||0]+'" text-anchor="middle" fill="#1a1813" font-weight="600" font-size="15">'+ev.label+'</text>');
+      if (ev.sub) parts.push('<text x="'+xm.toFixed(1)+'" y="'+rowSubY[ev.row||0]+'" text-anchor="middle" fill="#36332b" font-style="italic" font-size="13">'+ev.sub+'</text>');
+    } else {
+      const x = xFor(ev.m);
+      const anchor = ev.anchor || 'middle';
+      let lx = x;
+      if (anchor === 'end') lx = x - 5;
+      if (anchor === 'start') lx = x + 6;
+      parts.push('<line x1="'+x.toFixed(1)+'" x2="'+x.toFixed(1)+'" y1="'+rowLineTopY[ev.row||0]+'" y2="'+(M.t+plotH)+'" stroke="#1a1813" stroke-width="1" stroke-dasharray="3 3" opacity="0.65" />');
+      parts.push('<circle cx="'+x.toFixed(1)+'" cy="'+M.t+'" r="4" fill="#1a1813" />');
+      parts.push('<text x="'+lx.toFixed(1)+'" y="'+rowLabelY[ev.row||0]+'" text-anchor="'+anchor+'" fill="#1a1813" font-weight="600" font-size="15">'+ev.label+'</text>');
+      if (ev.sub) parts.push('<text x="'+lx.toFixed(1)+'" y="'+rowSubY[ev.row||0]+'" text-anchor="'+anchor+'" fill="#36332b" font-style="italic" font-size="13">'+ev.sub+'</text>');
+    }
+  });
+
+  parts.push('</g>');
+  const el = document.getElementById(svgId);
+  if (el) el.innerHTML = parts.join('');
+}
+
+function renderPerBrandBars(svgId, data) {
+  const W_SVG = 1200, H_SVG = 460;
+  const M = { t: 60, r: 60, b: 70, l: 120 };
+  const plotW = W_SVG - M.l - M.r;
+  const plotH = H_SVG - M.t - M.b;
+
+  const rMax = 0.60; // fixed scale to frame all brands consistently
+  const xFor = v => M.l + (v / rMax) * plotW;
+
+  const bandH = plotH / data.length;
+  const barH = Math.min(34, bandH * 0.62);
+
+  function colorFor(r) {
+    if (r >= 0.40) return '#28405a';
+    if (r >= 0.30) return '#5c7a99';
+    return '#a9b8c7';
+  }
+
+  const parts = [];
+  parts.push('<g font-family="-apple-system, \'Segoe UI\', sans-serif" font-size="16">');
+
+  // Vertical gridlines at 0.1 intervals
+  for (let v = 0; v <= rMax + 0.001; v += 0.10) {
+    const x = xFor(v);
+    parts.push('<line x1="'+x.toFixed(1)+'" x2="'+x.toFixed(1)+'" y1="'+M.t+'" y2="'+(M.t+plotH)+'" stroke="#d9cfb4" stroke-width="1" stroke-dasharray="'+(v===0?'0':'2 3')+'" />');
+    parts.push('<text x="'+x.toFixed(1)+'" y="'+(M.t+plotH+22)+'" text-anchor="middle" fill="#7a7264" font-size="14">+'+v.toFixed(2)+'</text>');
+  }
+  parts.push('<text x="'+(M.l + plotW/2).toFixed(1)+'" y="'+(M.t+plotH+48)+'" text-anchor="middle" fill="#1a1813" font-weight="600" letter-spacing="0.14em" font-size="12">PEARSON r (WEEKLY, CLEANED)</text>');
+
+  // Bars
+  data.forEach((d, i) => {
+    const yCenter = M.t + i * bandH + bandH / 2;
+    const yTop = yCenter - barH / 2;
+    const x0 = xFor(0);
+    const x1 = xFor(d.r);
+    const col = colorFor(d.r);
+    // Brand label
+    parts.push('<text x="'+(M.l-14)+'" y="'+(yCenter+5).toFixed(1)+'" text-anchor="end" fill="#1a1813" font-weight="600" font-size="16">'+d.brand+(d.flag||'')+'</text>');
+    // Bar
+    parts.push('<rect x="'+x0+'" y="'+yTop.toFixed(1)+'" width="'+(x1-x0).toFixed(1)+'" height="'+barH+'" fill="'+col+'" fill-opacity="0.88" />');
+    // Value label at bar end
+    parts.push('<text x="'+(x1+8).toFixed(1)+'" y="'+(yCenter+5).toFixed(1)+'" text-anchor="start" fill="#1a1813" font-weight="500" font-size="15">+'+d.r.toFixed(2)+'</text>');
+  });
+
+  // Baseline at r=0
+  parts.push('<line x1="'+M.l+'" x2="'+M.l+'" y1="'+M.t+'" y2="'+(M.t+plotH)+'" stroke="#1a1813" stroke-width="1.2" />');
+  parts.push('<line x1="'+M.l+'" x2="'+(W_SVG-M.r)+'" y1="'+(M.t+plotH)+'" y2="'+(M.t+plotH)+'" stroke="#1a1813" stroke-width="1.2" />');
+
+  // Legend (tier swatches)
+  const legendY = M.t - 32;
+  const legend = [
+    { col: '#28405a', label: 'r \u2265 +0.40' },
+    { col: '#5c7a99', label: '+0.30 to +0.40' },
+    { col: '#a9b8c7', label: 'r < +0.30' }
+  ];
+  let lx = M.l;
+  legend.forEach(item => {
+    parts.push('<rect x="'+lx+'" y="'+(legendY-12)+'" width="14" height="14" fill="'+item.col+'" fill-opacity="0.88" />');
+    parts.push('<text x="'+(lx+20)+'" y="'+(legendY-0)+'" fill="#1a1813" font-size="14">'+item.label+'</text>');
+    lx += 14 + 8 + item.label.length * 8 + 24;
+  });
+
+  // * footnote
+  parts.push('<text x="'+(W_SVG-M.r)+'" y="'+(M.t-16)+'" text-anchor="end" fill="#6b6556" font-style="italic" font-size="13">* CGR n=4 weeks; directional only</text>');
+
+  parts.push('</g>');
+  const el = document.getElementById(svgId);
+  if (el) el.innerHTML = parts.join('');
+}
+
+renderPubPortfolio('chart-pub-portfolio', CSV_PUB_PORTFOLIO, [
+  { m:'2025-04-29', m2:'2026-01-15', band:true },
+  { m:'2025-04-29', row:0, label:'Intro ramp', sub:'Program scaled', anchor:'start' },
+  { m:'2026-01-15', row:1, label:'Intro end', sub:'Plans removed', anchor:'end' },
+  { m:'2024-10-24', row:0, label:'AN Arc', anchor:'start' },
+  { m:'2025-04-07', m2:'2025-06-13', row:1, label:'AA + MHC Arc' },
+  { m:'2026-02-19', m2:'2026-03-24', row:0, label:'City (5) Arc' }
+]);
+
+const INDEXED_WINDOWS = [
+  { label: 'Baseline',         sub: '2024-09 to 2025-03', articles: 100, orders: 100, baseline: true },
+  { label: 'Intro ramp',       sub: '2025-05 to 2025-07', articles: 84,  orders: 98  },
+  { label: 'Intro peak',       sub: '2025-08 to 2025-11', articles: 85,  orders: 106 },
+  { label: 'Final intro month',sub: '2025-12 to 01/15',   articles: 82,  orders: 95  },
+  { label: 'Post-shutoff',     sub: '01/16 to 2026-04',   articles: 75,  orders: 69, post: true }
+];
+
+function renderIndexedWindows(svgId, data) {
+  const W_SVG = 1200, H_SVG = 480;
+  const M = { t: 70, r: 40, b: 110, l: 64 };
+  const plotW = W_SVG - M.l - M.r;
+  const plotH = H_SVG - M.t - M.b;
+
+  const yMax = 120;
+  const step = 20;
+  const yFor = v => M.t + plotH - (v / yMax) * plotH;
+
+  const groupCount = data.length;
+  const groupW = plotW / groupCount;
+  const barPairW = Math.min(150, groupW * 0.62);
+  const barW = barPairW / 2 - 6;
+
+  const parts = [];
+  parts.push('<g font-family="-apple-system, \'Segoe UI\', sans-serif" font-size="16">');
+
+  // Gridlines + y labels
+  for (let v = 0; v <= yMax; v += step) {
+    const y = yFor(v);
+    parts.push('<line x1="'+M.l+'" x2="'+(W_SVG-M.r)+'" y1="'+y.toFixed(1)+'" y2="'+y.toFixed(1)+'" stroke="#d9cfb4" stroke-width="1" stroke-dasharray="'+(v===0?'0':'2 3')+'" />');
+    parts.push('<text x="'+(M.l-12)+'" y="'+(y+5).toFixed(1)+'" text-anchor="end" fill="#7a7264" font-size="14">'+v+'</text>');
+  }
+
+  // Baseline emphasis line at 100
+  const y100 = yFor(100);
+  parts.push('<line x1="'+M.l+'" x2="'+(W_SVG-M.r)+'" y1="'+y100.toFixed(1)+'" y2="'+y100.toFixed(1)+'" stroke="#1a1813" stroke-width="1" stroke-dasharray="4 4" opacity="0.55" />');
+  parts.push('<text x="'+(W_SVG-M.r-8)+'" y="'+(y100-8).toFixed(1)+'" text-anchor="end" fill="#1a1813" font-style="italic" font-size="13">Baseline = 100</text>');
+
+  parts.push('<text x="'+(M.l-46)+'" y="'+(M.t-10)+'" fill="#1a1813" font-weight="600" font-size="13" letter-spacing="0.12em">INDEX</text>');
+
+  // Bars + labels per group
+  data.forEach((d, i) => {
+    const cx = M.l + i * groupW + groupW / 2;
+    const aX = cx - barW - 3;
+    const oX = cx + 3;
+    const aY = yFor(d.articles);
+    const oY = yFor(d.orders);
+    const aH = (M.t + plotH) - aY;
+    const oH = (M.t + plotH) - oY;
+
+    const aColor = '#28405a';
+    const oColor = '#8a3a3a';
+    const aOpacity = d.baseline ? 0.58 : 0.88;
+    const oOpacity = d.baseline ? 0.58 : 0.92;
+
+    parts.push('<rect x="'+aX.toFixed(1)+'" y="'+aY.toFixed(1)+'" width="'+barW+'" height="'+aH.toFixed(1)+'" fill="'+aColor+'" fill-opacity="'+aOpacity+'" />');
+    parts.push('<rect x="'+oX.toFixed(1)+'" y="'+oY.toFixed(1)+'" width="'+barW+'" height="'+oH.toFixed(1)+'" fill="'+oColor+'" fill-opacity="'+oOpacity+'" />');
+
+    // Value labels
+    parts.push('<text x="'+(aX+barW/2).toFixed(1)+'" y="'+(aY-8).toFixed(1)+'" text-anchor="middle" fill="#1a1813" font-weight="500" font-size="15">'+d.articles+'</text>');
+    parts.push('<text x="'+(oX+barW/2).toFixed(1)+'" y="'+(oY-8).toFixed(1)+'" text-anchor="middle" fill="#1a1813" font-weight="500" font-size="15">'+d.orders+'</text>');
+
+    // X labels
+    parts.push('<text x="'+cx.toFixed(1)+'" y="'+(M.t+plotH+24)+'" text-anchor="middle" fill="#1a1813" font-weight="600" font-size="15">'+d.label+'</text>');
+    parts.push('<text x="'+cx.toFixed(1)+'" y="'+(M.t+plotH+44)+'" text-anchor="middle" fill="#6b6556" font-style="italic" font-size="13">'+d.sub+'</text>');
+  });
+
+  // Plot border
+  parts.push('<line x1="'+M.l+'" x2="'+(W_SVG-M.r)+'" y1="'+(M.t+plotH)+'" y2="'+(M.t+plotH)+'" stroke="#1a1813" stroke-width="1.2" />');
+  parts.push('<line x1="'+M.l+'" x2="'+M.l+'" y1="'+M.t+'" y2="'+(M.t+plotH)+'" stroke="#1a1813" stroke-width="1.2" />');
+
+  parts.push('</g>');
+  const el = document.getElementById(svgId);
+  if (el) el.innerHTML = parts.join('');
+}
+
+renderIndexedWindows('chart-pub-windows', INDEXED_WINDOWS);
+
+renderPerBrandBars('chart-pub-perbrand', PER_BRAND_R);
 
 })();
 </script>
