@@ -1114,7 +1114,7 @@ footer.endnote::before {
  <div class="chart-legend">
  <span><span class="swatch" style="background:var(--accent)"></span>Articles published (left axis)</span>
  <span><span class="swatch" style="background:var(--neg)"></span>Paid orders, web (right axis)</span>
- <span><span class="swatch" style="background:#b8ad8d;opacity:0.7"></span>Holiday &amp; last-call weeks</span>
+ <span><span class="swatch" style="background:#8f7a3f;opacity:0.75"></span>Holiday &amp; last-call weeks (excluded from correlation)</span>
  </div>
  <div class="chart-footnote">
  Weekly totals across CCB, CDB, CCL, CNY, CGR, AA, ANG, MHC. Orders are individual paid, source = Web; Ad Age advertorial content excluded from articles. Shaded weeks (Thanksgiving, Christmas, New Year, and the 01/05/2026 last-call spike) are excluded from correlation figures. See <a href="#a4">A4</a> for per-brand detail, indexed window comparison, and methodology.
@@ -4498,12 +4498,14 @@ function renderPubPortfolio(svgId, csv, milestones) {
     parts.push('<rect x="'+x0.toFixed(1)+'" y="'+M.t+'" width="'+(x1-x0).toFixed(1)+'" height="'+plotH+'" fill="#c9c1ae" fill-opacity="0.32" />');
   });
 
-  // Anomaly weeks (holidays + last-call spike) — excluded from normal-weeks correlation, marked visually
+  // Anomaly weeks (holidays + last-call spike) — excluded from normal-weeks correlation.
+  // Drawn as thin strip at top of plot area to stay visually distinct from the intro-era band.
   const anomalies = ['2024-11-25','2024-12-23','2024-12-30','2025-11-24','2025-12-22','2025-12-29','2026-01-05'];
+  const anomStripH = 14;
   anomalies.forEach(d => {
     const x0 = xFor(d);
     const x1 = xFor(d) + (plotW / ((t1 - t0) / (7 * 86400000)));
-    parts.push('<rect x="'+x0.toFixed(1)+'" y="'+M.t+'" width="'+(x1-x0).toFixed(1)+'" height="'+plotH+'" fill="#b8ad8d" fill-opacity="0.32" />');
+    parts.push('<rect x="'+x0.toFixed(1)+'" y="'+M.t+'" width="'+(x1-x0).toFixed(1)+'" height="'+anomStripH+'" fill="#8f7a3f" fill-opacity="0.55" />');
   });
 
   // Plot border
@@ -4534,10 +4536,14 @@ function renderPubPortfolio(svgId, csv, milestones) {
   milestones.forEach(ev => {
     if (ev.band) return; // unlabeled bands drawn separately as rects
     if (ev.m2) {
-      // Labeled range: vertical at each end + centered label
+      // Labeled range: bracket above plot (no lines crossing the data).
+      // Solid lines (vs dashed on single verticals) to visually distinguish calendar-only ranges from data-event markers.
       const x0 = xFor(ev.m), x1 = xFor(ev.m2), xm = (x0+x1)/2;
-      parts.push('<line x1="'+x0.toFixed(1)+'" x2="'+x0.toFixed(1)+'" y1="'+rowLineTopY[ev.row||0]+'" y2="'+(M.t+plotH)+'" stroke="#1a1813" stroke-width="1" stroke-dasharray="3 3" opacity="0.55" />');
-      parts.push('<line x1="'+x1.toFixed(1)+'" x2="'+x1.toFixed(1)+'" y1="'+rowLineTopY[ev.row||0]+'" y2="'+(M.t+plotH)+'" stroke="#1a1813" stroke-width="1" stroke-dasharray="3 3" opacity="0.55" />');
+      const yTop = rowLineTopY[ev.row||0];
+      const yBot = M.t - 3;
+      parts.push('<line x1="'+x0.toFixed(1)+'" x2="'+x0.toFixed(1)+'" y1="'+yTop+'" y2="'+yBot+'" stroke="#1a1813" stroke-width="1" opacity="0.55" />');
+      parts.push('<line x1="'+x1.toFixed(1)+'" x2="'+x1.toFixed(1)+'" y1="'+yTop+'" y2="'+yBot+'" stroke="#1a1813" stroke-width="1" opacity="0.55" />');
+      parts.push('<line x1="'+x0.toFixed(1)+'" x2="'+x1.toFixed(1)+'" y1="'+yBot+'" y2="'+yBot+'" stroke="#1a1813" stroke-width="1" opacity="0.55" />');
       parts.push('<text x="'+xm.toFixed(1)+'" y="'+rowLabelY[ev.row||0]+'" text-anchor="middle" fill="#1a1813" font-weight="600" font-size="15">'+ev.label+'</text>');
       if (ev.sub) parts.push('<text x="'+xm.toFixed(1)+'" y="'+rowSubY[ev.row||0]+'" text-anchor="middle" fill="#36332b" font-style="italic" font-size="13">'+ev.sub+'</text>');
     } else {
