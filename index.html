@@ -4534,16 +4534,22 @@ function renderPubPortfolio(svgId, csv, milestones) {
   const rowSubY = [M.t - 12, M.t - 62];
   const rowLineTopY = [M.t - 46, M.t - 96];
   milestones.forEach(ev => {
-    if (ev.band) return; // unlabeled bands drawn separately as rects
+    if (ev.band) {
+      // Band: rect already drawn. Add centered label inside the block if provided.
+      // Paint-order trick gives text a cream halo so it stays readable where data lines cross through.
+      if (ev.label) {
+        const xm = (xFor(ev.m) + xFor(ev.m2)) / 2;
+        const ym = M.t + plotH / 2 - 6;
+        parts.push('<text x="'+xm.toFixed(1)+'" y="'+ym.toFixed(1)+'" text-anchor="middle" fill="#1a1813" stroke="#faf5e6" stroke-width="4" paint-order="stroke" font-weight="700" font-size="16" letter-spacing="0.02em">'+ev.label+'</text>');
+        if (ev.sub) parts.push('<text x="'+xm.toFixed(1)+'" y="'+(ym+20).toFixed(1)+'" text-anchor="middle" fill="#36332b" stroke="#faf5e6" stroke-width="3" paint-order="stroke" font-style="italic" font-size="13">'+ev.sub+'</text>');
+      }
+      return;
+    }
     if (ev.m2) {
-      // Labeled range: bracket above plot (no lines crossing the data).
-      // Solid lines (vs dashed on single verticals) to visually distinguish calendar-only ranges from data-event markers.
+      // Labeled range: dashed verticals at each end, label centered above plot
       const x0 = xFor(ev.m), x1 = xFor(ev.m2), xm = (x0+x1)/2;
-      const yTop = rowLineTopY[ev.row||0];
-      const yBot = M.t - 3;
-      parts.push('<line x1="'+x0.toFixed(1)+'" x2="'+x0.toFixed(1)+'" y1="'+yTop+'" y2="'+yBot+'" stroke="#1a1813" stroke-width="1" opacity="0.55" />');
-      parts.push('<line x1="'+x1.toFixed(1)+'" x2="'+x1.toFixed(1)+'" y1="'+yTop+'" y2="'+yBot+'" stroke="#1a1813" stroke-width="1" opacity="0.55" />');
-      parts.push('<line x1="'+x0.toFixed(1)+'" x2="'+x1.toFixed(1)+'" y1="'+yBot+'" y2="'+yBot+'" stroke="#1a1813" stroke-width="1" opacity="0.55" />');
+      parts.push('<line x1="'+x0.toFixed(1)+'" x2="'+x0.toFixed(1)+'" y1="'+rowLineTopY[ev.row||0]+'" y2="'+(M.t+plotH)+'" stroke="#1a1813" stroke-width="1" stroke-dasharray="3 3" opacity="0.55" />');
+      parts.push('<line x1="'+x1.toFixed(1)+'" x2="'+x1.toFixed(1)+'" y1="'+rowLineTopY[ev.row||0]+'" y2="'+(M.t+plotH)+'" stroke="#1a1813" stroke-width="1" stroke-dasharray="3 3" opacity="0.55" />');
       parts.push('<text x="'+xm.toFixed(1)+'" y="'+rowLabelY[ev.row||0]+'" text-anchor="middle" fill="#1a1813" font-weight="600" font-size="15">'+ev.label+'</text>');
       if (ev.sub) parts.push('<text x="'+xm.toFixed(1)+'" y="'+rowSubY[ev.row||0]+'" text-anchor="middle" fill="#36332b" font-style="italic" font-size="13">'+ev.sub+'</text>');
     } else {
@@ -4635,11 +4641,9 @@ function renderPerBrandBars(svgId, data) {
 }
 
 renderPubPortfolio('chart-pub-portfolio', CSV_PUB_PORTFOLIO, [
-  { m:'2025-04-29', m2:'2026-01-15', band:true },
-  { m:'2025-04-29', row:0, label:'Intro ramp', sub:'Program scaled', anchor:'start' },
-  { m:'2026-01-15', row:1, label:'Intro end', sub:'Plans removed', anchor:'end' },
+  { m:'2025-04-29', m2:'2026-01-15', band:true, label:'Intro-rate program', sub:'Apr 2025 \u2013 Jan 15 2026' },
   { m:'2024-10-24', row:0, label:'AN Arc', anchor:'start' },
-  { m:'2025-04-07', m2:'2025-06-13', row:1, label:'AA + MHC Arc' },
+  { m:'2025-04-07', m2:'2025-06-13', row:0, label:'AA + MHC Arc' },
   { m:'2026-02-19', m2:'2026-03-24', row:0, label:'City (5) Arc' }
 ]);
 
